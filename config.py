@@ -11,16 +11,16 @@ from logging.handlers import RotatingFileHandler
 load_dotenv("config.env")
 
 # Bot token dari @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7525852620:AAEpTZb0tJv-lzsT8zF3FYat10xfWh8Qq7Y")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
 # API ID Anda dari my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "21412979"))
+APP_ID = int(os.environ.get("APP_ID", ""))
 
 # API Hash Anda dari my.telegram.org
-API_HASH = os.environ.get("API_HASH", "da38b6a423e2870c0d8e7bad027b85b1")
+API_HASH = os.environ.get("API_HASH", "")
 
 # ID Channel Database
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002199540155"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-"))
 
 # Protect Content
 PROTECT_CONTENT = strtobool(os.environ.get("PROTECT_CONTENT", "True"))
@@ -36,11 +36,11 @@ UPSTREAM_BRANCH = os.environ.get("UPSTREAM_BRANCH", "master")
 DB_URI = os.environ.get("DATABASE_URL", "")
 
 #Database MONGO
-MONGO_URI = os.environ.get("MONGO_URI", "mongodb+srv://vrashank:pochlike@vrashank.rt0gu.mongodb.net/")
-MONGO_NAME = os.environ.get("MONGO_NAME", "vrashank")
+MONGO_URI = os.environ.get("MONGO_URI", "")
+MONGO_NAME = os.environ.get("MONGO_NAME", "")
 
 # ID dari Channel Atau Group Untuk Wajib Subscribenya
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002192929445")) 
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-")) 
 FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "0"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
